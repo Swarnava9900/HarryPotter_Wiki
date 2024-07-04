@@ -15,7 +15,7 @@ function App() {
    async function FetchData() {
       try {
         setLoading(true);
-        let response = await fetch('https://cors-bypass.slggourav.workers.dev/?q=https://hp-api.onrender.com/api/characters',options);
+        let response = await fetch('https://hp-api.onrender.com/api/characters',options);
       
         if(!response.ok){
           throw new Error("Something Snapped");
